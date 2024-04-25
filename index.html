@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Slick Carousel CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+  <body class="bg-[#F2F2F2]">
+    <div class="hidden sm:hidden md:hidden lg:hidden xl:block">
+      <div
+        class="bg-[#000000] text-[#FFFFFF] flex justify-between items-center px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-2"
+      >
+        <div class="flex justify-between items-center gap-x-4">
+          <div class="flex justify-between items-center gap-x-2">
+            <i class="fa-solid fa-phone"></i>
+            <p class="">+91 7368035305</p>
+          </div>
+          <div class="flex justify-between items-center gap-x-2">
+            <i class="far fa-envelope"></i>
+            <p class="">info@educationtoday.co</p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center gap-x-4">
+          <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class=""><i class="fab fa-instagram"></i></a>
+          <a href="#" class=""><i class="fab fa-twitter"></i></a>
+          <a href="#" class=""><i class="fab fa-linkedin"></i></a>
+          <a href="#" class=""><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <header class="bg-[#FFFFFF] w-full z-50 shadow-md border-b-[1px]">
+      <nav
+        class="flex w-full justify-between px-[1rem] sm:px-[3rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-4 md:py-4 items-center"
+      >
+        <div>
+          <a href="/">
+            <img
+              src="https://educationtoday.co/assets/img/educationtoday.png"
+              width="161"
+              height="40.25"
+              alt="Educationtoday"
+            />
+          </a>
+        </div>
+        <div
+          class="relative lg:w-[20rem] xl:w-[30rem] hidden sm:hidden md:hidden lg:block xl:block"
+        >
+          <input
+            type="text"
+            class="w-full border-2 border-dark-subtle text-[#000000] border-[#000000] p-2 pl-[40px] bg-transparent rounded-[4px]"
+            placeholder="Search"
+          />
+          <span class="absolute left-3 top-[10px]"
+            ><i class="fas fa-search"></i
+          ></span>
+        </div>
+        <div>
+          <ul
+            class="flex gap-x-4 md:gap-x-4 lg:gap-x-6 xl:gap-x-8 font-semibold items-center"
+          >
+            <!-- <li class="block">
+              <button
+                class="py-[6px] px-3 rounded-[4px] border-2 border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-[#FFFFFF]"
+              >
+                <i class="fa-solid fa-sun text-l"></i>
+              </button>
+            </li> -->
+            <li class="hidden sm:hidden md:hidden lg:block">
+              <a
+                href="/auth/sign-up"
+                class="px-4 py-2 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+              >
+                Sign In
+              </a>
+            </li>
+            <li class="hidden sm:hidden md:hidden lg:block">
+              <a
+                href="/auth/sign-up"
+                class="px-4 py-2 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+              >
+                Sign Up
+              </a>
+            </li>
+            <li class="block sm:block md:block lg:block xl:hidden">
+              <button
+                class="py-[6px] px-3 rounded-[4px] border-2 border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-[#FFFFFF]"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        class="hidden sm:hidden md:hidden lg:hidden xl:block bg-[#000000] text-[#FFFFFF]"
+      >
+        <ul
+          class="flex w-full justify-around items-center px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-4 font-semibold"
+        >
+          <li class="">
+            <a href="/" class="hover:border-b-2 border-[#D6D6D6] text-l">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/Ui-Ux-Design"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="/Web-Development"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >School</a
+            >
+          </li>
+          <li>
+            <a href="/Typography" class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >Boarding Schools</a
+            >
+          </li>
+          <li>
+            <a
+              href="/Freelance-Business"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+            >
+              School Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="/Freelance-Business"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+            >
+              Parents Corner
+            </a>
+          </li>
+          <li class="">
+            <a href="/Lifestyle" class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >Admissions
+            </a>
+          </li>
+          <li>
+            <a href="/Startups" class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section>
+      <div
+        class="w-full h-[750px] sm:h-[750px] md:h-[750px] lg:h-[500px] bg-no-repeat bg-center bg-cover rounded-[4px] relative shadow-lg"
+        style="
+          background-image: url('https://www.educationtoday.co/assets/img/1.jpg');
+        "
+      >
+        <div
+          class="bg-[#000000] h-[750px] sm:h-[750px] md:h-[750px] lg:h-[500px] rounded-[4px] opacity-60"
+        ></div>
+        <div
+          class="absolute top-4 left-0 right-0 md:p-10 px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-6"
+        >
+          <div
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center"
+          >
+            <div
+              class="w-full sm:w-full md:w-full text-center sm:text-center md:text-center lg:text-left md:ml-0 lg:ml-10"
+            >
+              <h1
+                class="text-[#FFFFFF] text-3xl sm:text-3xl md:text-4xl lg:text-[42px] md:text-center lg:text-left font-bold"
+              >
+                Find Perfect School For Your Kids
+              </h1>
+              <p
+                class="text-[#fff] mt-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
+              >
+                Search the Best Schools from list of over 1000+ schools Located
+                in India itself. Educationtoday provides personalized Counseling
+                Support to you.
+              </p>
+              <div
+                class="mt-8 flex justify-center md:justify-center lg:justify-start gap-x-4 md:gap-x-10"
+              >
+                <button
+                  class="px-4 py-2 border-2 border-[#FFFFFF] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#000000] rounded focus:outline-none"
+                >
+                  Learn More
+                </button>
+                <a
+                  href="/auth/sign-up"
+                  class="px-4 py-2 border-2 bg-[#FFFFFF] text-[#000000] rounded focus:outline-none"
+                >
+                  Create Account
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full sm:w-full md:w-full text-center sm:text-center md:text-center lg:text-center mx-auto mt-10 sm:mt-10 md:mt-10 lg:mt-0"
+            >
+              <div
+                class="border-2 border-[#000000] w-[20rem] sm:w-[20rem] md:w-[24rem] mx-auto bg-[#FFFFFF] rounded-[10px] p-8 shadow-md"
+              >
+                <div class="mb-4">
+                  <h4 class="text-xl text-[#000000] font-semibold">
+                    Search What you wants.
+                  </h4>
+                </div>
+                <hr class="border-b-[1px] border-[#000000]" />
+                <form class="mt-8 mb-4">
+                  <div class="text-left mt-2">
+                    <div>
+                      <label for="" class="">Classification</label>
+                      <select
+                        type="text"
+                        class="w-full border-2 text-[#000000] border-[#000000] p-2 mt-1 bg-transparent rounded-[4px]"
+                        placeholder="Classification"
+                      >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="text-left mt-2">
+                    <div>
+                      <label for="" class="">Classification</label>
+                      <select
+                        type="text"
+                        class="w-full border-2 text-[#000000] border-[#000000] p-2 mt-1 bg-transparent rounded-[4px]"
+                        placeholder="Classification"
+                      >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button
+                      type="submit"
+                      class="w-full px-4 py-2 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                    >
+                      Search
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative">
+      <div
+        class="px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-8 absolute top-[-80px] left-0 right-0"
+      >
+        <div
+          class="border-2 border-[#FFFFFF] bg-[#FFFFFF] shadow-lg rounded-[4px]"
+        >
+          <div class="flex justify-around items-center text-center p-4">
+            <div class="flex-col">
+              <a href=""
+                ><i class="fas fa-home text-4xl"></i>
+                <p>Pre-School</p></a
+              >
+            </div>
+            <div class="flex-col">
+              <a href=""
+                ><i class="fas fa-home text-4xl"></i>
+                <p>School</p></a
+              >
+            </div>
+            <div class="flex-col">
+              <a href=""
+                ><i class="fas fa-home text-4xl"></i>
+                <p>College</p></a
+              >
+            </div>
+            <div class="flex-col">
+              <a href=""
+                ><i class="fas fa-home text-4xl"></i>
+                <p>Institute</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div
+        class="px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] pt-8"
+      >
+        <div class="mt-20 text-center">
+          <h3 class="text-4xl mb-1 font-bold">Browse by Category</h3>
+          <p class="text-[18px]">
+            Find the school that's Perfect for you Kids. About 100+ new schools
+            everyday.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-around items-center mt-10 category">
+          <a href=""
+            ><div class="border-2 border-[#000000] p-4 rounded-[4px]">
+              <div class="flex items-center gap-x-2">
+                <i class="fas fa-home text-3xl"></i>
+                <div>
+                  <h6 class="font-semibold">Day School</h6>
+                  <p class="text-[12px]">4 Day School Available</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href=""
+            ><div class="border-2 border-[#000000] p-4 rounded-[4px]">
+              <div class="flex items-center gap-x-2">
+                <i class="fas fa-home text-3xl"></i>
+                <div>
+                  <h6 class="font-semibold">Pre School</h6>
+                  <p class="text-[12px]">4 Pre School Available</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href=""
+            ><div class="border-2 border-[#000000] p-4 rounded-[4px]">
+              <div class="flex items-center gap-x-2">
+                <i class="fas fa-home text-3xl"></i>
+                <div>
+                  <h6 class="font-semibold">Boarding School</h6>
+                  <p class="text-[12px]">4 Boarding School Available</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href=""
+            ><div class="border-2 border-[#000000] p-4 rounded-[4px]">
+              <div class="flex items-center gap-x-2">
+                <i class="fas fa-home text-3xl"></i>
+                <div>
+                  <h6 class="font-semibold">CBSE School</h6>
+                  <p class="text-[12px]">4 CBSE School Available</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href=""
+            ><div class="border-2 border-[#000000] p-4 rounded-[4px]">
+              <div class="flex items-center gap-x-2">
+                <i class="fas fa-home text-3xl"></i>
+                <div>
+                  <h6 class="font-semibold">ICSE School</h6>
+                  <p class="text-[12px]">4 ICSE School Available</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href=""
+            ><div class="border-2 border-[#000000] p-4 rounded-[4px]">
+              <div class="flex items-center gap-x-2">
+                <i class="fas fa-home text-3xl"></i>
+                <div>
+                  <h6 class="font-semibold">Play School</h6>
+                  <p class="text-[12px]">4 Play School Available</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div
+        class="px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-6"
+      >
+        <div class="lg:flex gap-x-10">
+          <div class="container mx-auto">
+            <div
+              class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-x-6 items-center"
+            >
+              <div class="md:flex justify-center items-center gap-x-14">
+                <div
+                  class="w-full sm:w-full md:w-full sm:text-center md:text-center lg:text-left"
+                >
+                  <h2
+                    class="text-2xl sm:text-2xl md:text-5xl font-semibold text-dark-subtle"
+                  >
+                    Find A Best School That Make Bright Future
+                  </h2>
+                  <div
+                    class="border-b-4 mt-4 border-[#D6D6D6] sm:w-10/12 md:w-10/12 lg:w-3/12 sm:mx-auto md:mx-auto lg:mx-0"
+                  ></div>
+                  <p class="text-sm mb-4 mt-4 text-dark-subtle">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <button
+                    class="px-4 py-3 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
+              <div
+                class="md:flex justify-center items-center gap-x-14 mt-10 md:mt-0"
+              >
+                <div
+                  class="w-full sm:w-full md:w-full text-center sm:text-center md:text-center lg:text-center"
+                >
+                  <div class="p-2 flex justify-center">
+                    <div
+                      class="relative flex justify-center items-center h-[400px] w-[350px] overflow-hidden rounded-[4px]"
+                    >
+                      <img
+                        src="https://cdn-honmf.nitrocdn.com/AlCEqoradWpJJqOCaKAlLrCrAFJMUHbQ/assets/images/optimized/rev-f8c4dae/www.schoolsofdehradun.com/wp-content/uploads/2023/09/dehradun-schools.png"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        class="absolute play-btn text-center text-xl cursor-pointer z-10"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] mb-10"
+      >
+        <div class="mt-16 text-center">
+          <h3 class="text-4xl mb-1 font-bold">Schools for You.</h3>
+          <p class="text-[18px]">
+            Search and connect with the right School faster.
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex flex-wrap justify-around text-center items-center mt-4 schools-location"
+          >
+            <div class="border-2 border-[#000000] bg-[#000000] text-[#FFFFFF] p-2 rounded-[4px]">
+              <h6 class="font-semibold">New Delhi</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Gurgaon</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Jaipur</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Bengaluru</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Mumbai</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Kolkata</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Hyderabad</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Chennai</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Chandigarh</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Pune</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Ahmedabad</h6>
+            </div>
+            <div class="border-2 border-[#000000] p-2 rounded-[4px]">
+              <h6 class="font-semibold">Mysore</h6>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2">
+          <div class="lg:flex gap-x-10">
+            <div class="container mx-auto">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6"
+              >
+                <div
+                  class="W-full bg-[#FFFFFF] border-2 border-[#000000] mt-10 shadow-xl rounded-[4px]"
+                >
+                  <div class="">
+                    <div
+                      class="relative h-[200px] overflow-hidden rounded-t-[4px]"
+                    >
+                      <img
+                        src="https://www.educationtoday.co/assets/img/schoolcover/20240424090435coverphotoNewProject.jpg"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        className="absolute  right-2 top-4 mr-2 text-xl cursor-pointer z-10"
+                      >
+                        <i class="fa-solid fa-location-dot text-[#000000]"></i>
+                      </span>
+                    </div>
+                    <div
+                      class="px-4 pt-4 pb-2 dark:text-dark-subtle text-tertiary"
+                    >
+                      <div class="flex items-center gap-x-2">
+                        <div
+                          class="relative h-[40px] w-[40px] border-2 border-[#000000] rounded-full overflow-hidden"
+                        >
+                          <img
+                            src="https://www.educationtoday.co/assets/img/schoollogo/20240424090435logodownload.jpg"
+                            class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+                            alt=""
+                          />
+                        </div>
+                        <a href="">
+                          <h1 class="text-l font-bold hover:text-light-subtle">
+                            K.P.S Memorial High School
+                          </h1>
+                          <p>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            Gardanibagh, Patna, Bihar, In
+                          </p>
+                        </a>
+                      </div>
+                      <div class="flex justify-around items-center mt-4">
+                        <div class="text-center">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                          <p>CBSE/ICSE</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-building"></i>
+                          <p>Day School</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-user-graduate"></i>
+                          <p>Co-ed</p>
+                        </div>
+                      </div>
+                      <div class="border-b-2 mt-4 border-[#000000]"></div>
+                      <div class="flex justify-between items-center mt-2">
+                        <div className="text-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>257</span>
+                        </div>
+                        <div class="flex items-center gap-x-1">
+                          <div>
+                            <p class="text-[12px] text-right font-semibold">
+                              Very Good
+                            </p>
+                            <p class="text-[12px] text-right">2 Reviews</p>
+                          </div>
+                          <button
+                            class="px-2 py-1 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                          >
+                            4.0
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="W-full bg-[#FFFFFF] border-2 border-[#000000] mt-10 shadow-xl rounded-[4px]"
+                >
+                  <div class="">
+                    <div
+                      class="relative h-[200px] overflow-hidden rounded-t-[4px]"
+                    >
+                      <img
+                        src="https://www.educationtoday.co/assets/img/schoolcover/20240424090435coverphotoNewProject.jpg"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        className="absolute  right-2 top-4 mr-2 text-xl cursor-pointer z-10"
+                      >
+                        <i class="fa-solid fa-location-dot text-[#000000]"></i>
+                      </span>
+                    </div>
+                    <div
+                      class="px-4 pt-4 pb-2 dark:text-dark-subtle text-tertiary"
+                    >
+                      <div class="flex items-center gap-x-2">
+                        <div
+                          class="relative h-[40px] w-[40px] border-2 border-[#000000] rounded-full overflow-hidden"
+                        >
+                          <img
+                            src="https://www.educationtoday.co/assets/img/schoollogo/20240424090435logodownload.jpg"
+                            class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+                            alt=""
+                          />
+                        </div>
+                        <a href="">
+                          <h1 class="text-l font-bold hover:text-light-subtle">
+                            K.P.S Memorial High School
+                          </h1>
+                          <p>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            Gardanibagh, Patna, Bihar, In
+                          </p>
+                        </a>
+                      </div>
+                      <div class="flex justify-around items-center mt-4">
+                        <div class="text-center">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                          <p>CBSE/ICSE</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-building"></i>
+                          <p>Day School</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-user-graduate"></i>
+                          <p>Co-ed</p>
+                        </div>
+                      </div>
+                      <div class="border-b-2 mt-4 border-[#000000]"></div>
+                      <div class="flex justify-between items-center mt-2">
+                        <div className="text-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>257</span>
+                        </div>
+                        <div class="flex items-center gap-x-1">
+                          <div>
+                            <p class="text-[12px] text-right font-semibold">
+                              Very Good
+                            </p>
+                            <p class="text-[12px] text-right">2 Reviews</p>
+                          </div>
+                          <button
+                            class="px-2 py-1 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                          >
+                            4.0
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="W-full bg-[#FFFFFF] border-2 border-[#000000] mt-10 shadow-xl rounded-[4px]"
+                >
+                  <div class="">
+                    <div
+                      class="relative h-[200px] overflow-hidden rounded-t-[4px]"
+                    >
+                      <img
+                        src="https://www.educationtoday.co/assets/img/schoolcover/20240424090435coverphotoNewProject.jpg"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        className="absolute  right-2 top-4 mr-2 text-xl cursor-pointer z-10"
+                      >
+                        <i class="fa-solid fa-location-dot text-[#000000]"></i>
+                      </span>
+                    </div>
+                    <div
+                      class="px-4 pt-4 pb-2 dark:text-dark-subtle text-tertiary"
+                    >
+                      <div class="flex items-center gap-x-2">
+                        <div
+                          class="relative h-[40px] w-[40px] border-2 border-[#000000] rounded-full overflow-hidden"
+                        >
+                          <img
+                            src="https://www.educationtoday.co/assets/img/schoollogo/20240424090435logodownload.jpg"
+                            class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+                            alt=""
+                          />
+                        </div>
+                        <a href="">
+                          <h1 class="text-l font-bold hover:text-light-subtle">
+                            K.P.S Memorial High School
+                          </h1>
+                          <p>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            Gardanibagh, Patna, Bihar, In
+                          </p>
+                        </a>
+                      </div>
+                      <div class="flex justify-around items-center mt-4">
+                        <div class="text-center">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                          <p>CBSE/ICSE</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-building"></i>
+                          <p>Day School</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-user-graduate"></i>
+                          <p>Co-ed</p>
+                        </div>
+                      </div>
+                      <div class="border-b-2 mt-4 border-[#000000]"></div>
+                      <div class="flex justify-between items-center mt-2">
+                        <div className="text-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>257</span>
+                        </div>
+                        <div class="flex items-center gap-x-1">
+                          <div>
+                            <p class="text-[12px] text-right font-semibold">
+                              Very Good
+                            </p>
+                            <p class="text-[12px] text-right">2 Reviews</p>
+                          </div>
+                          <button
+                            class="px-2 py-1 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                          >
+                            4.0
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="W-full bg-[#FFFFFF] border-2 border-[#000000] mt-10 shadow-xl rounded-[4px]"
+                >
+                  <div class="">
+                    <div
+                      class="relative h-[200px] overflow-hidden rounded-t-[4px]"
+                    >
+                      <img
+                        src="https://www.educationtoday.co/assets/img/schoolcover/20240424090435coverphotoNewProject.jpg"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        className="absolute  right-2 top-4 mr-2 text-xl cursor-pointer z-10"
+                      >
+                        <i class="fa-solid fa-location-dot text-[#000000]"></i>
+                      </span>
+                    </div>
+                    <div
+                      class="px-4 pt-4 pb-2 dark:text-dark-subtle text-tertiary"
+                    >
+                      <div class="flex items-center gap-x-2">
+                        <div
+                          class="relative h-[40px] w-[40px] border-2 border-[#000000] rounded-full overflow-hidden"
+                        >
+                          <img
+                            src="https://www.educationtoday.co/assets/img/schoollogo/20240424090435logodownload.jpg"
+                            class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+                            alt=""
+                          />
+                        </div>
+                        <a href="">
+                          <h1 class="text-l font-bold hover:text-light-subtle">
+                            K.P.S Memorial High School
+                          </h1>
+                          <p>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            Gardanibagh, Patna, Bihar, In
+                          </p>
+                        </a>
+                      </div>
+                      <div class="flex justify-around items-center mt-4">
+                        <div class="text-center">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                          <p>CBSE/ICSE</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-building"></i>
+                          <p>Day School</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-user-graduate"></i>
+                          <p>Co-ed</p>
+                        </div>
+                      </div>
+                      <div class="border-b-2 mt-4 border-[#000000]"></div>
+                      <div class="flex justify-between items-center mt-2">
+                        <div className="text-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>257</span>
+                        </div>
+                        <div class="flex items-center gap-x-1">
+                          <div>
+                            <p class="text-[12px] text-right font-semibold">
+                              Very Good
+                            </p>
+                            <p class="text-[12px] text-right">2 Reviews</p>
+                          </div>
+                          <button
+                            class="px-2 py-1 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                          >
+                            4.0
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="W-full bg-[#FFFFFF] border-2 border-[#000000] mt-10 shadow-xl rounded-[4px]"
+                >
+                  <div class="">
+                    <div
+                      class="relative h-[200px] overflow-hidden rounded-t-[4px]"
+                    >
+                      <img
+                        src="https://www.educationtoday.co/assets/img/schoolcover/20240424090435coverphotoNewProject.jpg"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        className="absolute  right-2 top-4 mr-2 text-xl cursor-pointer z-10"
+                      >
+                        <i class="fa-solid fa-location-dot text-[#000000]"></i>
+                      </span>
+                    </div>
+                    <div
+                      class="px-4 pt-4 pb-2 dark:text-dark-subtle text-tertiary"
+                    >
+                      <div class="flex items-center gap-x-2">
+                        <div
+                          class="relative h-[40px] w-[40px] border-2 border-[#000000] rounded-full overflow-hidden"
+                        >
+                          <img
+                            src="https://www.educationtoday.co/assets/img/schoollogo/20240424090435logodownload.jpg"
+                            class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+                            alt=""
+                          />
+                        </div>
+                        <a href="">
+                          <h1 class="text-l font-bold hover:text-light-subtle">
+                            K.P.S Memorial High School
+                          </h1>
+                          <p>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            Gardanibagh, Patna, Bihar, In
+                          </p>
+                        </a>
+                      </div>
+                      <div class="flex justify-around items-center mt-4">
+                        <div class="text-center">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                          <p>CBSE/ICSE</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-building"></i>
+                          <p>Day School</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-user-graduate"></i>
+                          <p>Co-ed</p>
+                        </div>
+                      </div>
+                      <div class="border-b-2 mt-4 border-[#000000]"></div>
+                      <div class="flex justify-between items-center mt-2">
+                        <div className="text-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>257</span>
+                        </div>
+                        <div class="flex items-center gap-x-1">
+                          <div>
+                            <p class="text-[12px] text-right font-semibold">
+                              Very Good
+                            </p>
+                            <p class="text-[12px] text-right">2 Reviews</p>
+                          </div>
+                          <button
+                            class="px-2 py-1 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                          >
+                            4.0
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="W-full bg-[#FFFFFF] border-2 border-[#000000] mt-10 shadow-xl rounded-[4px]"
+                >
+                  <div class="">
+                    <div
+                      class="relative h-[200px] overflow-hidden rounded-t-[4px]"
+                    >
+                      <img
+                        src="https://www.educationtoday.co/assets/img/schoolcover/20240424090435coverphotoNewProject.jpg"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        className="absolute  right-2 top-4 mr-2 text-xl cursor-pointer z-10"
+                      >
+                        <i class="fa-solid fa-location-dot text-[#000000]"></i>
+                      </span>
+                    </div>
+                    <div
+                      class="px-4 pt-4 pb-2 dark:text-dark-subtle text-tertiary"
+                    >
+                      <div class="flex items-center gap-x-2">
+                        <div
+                          class="relative h-[40px] w-[40px] border-2 border-[#000000] rounded-full overflow-hidden"
+                        >
+                          <img
+                            src="https://www.educationtoday.co/assets/img/schoollogo/20240424090435logodownload.jpg"
+                            class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+                            alt=""
+                          />
+                        </div>
+                        <a href="">
+                          <h1 class="text-l font-bold hover:text-light-subtle">
+                            K.P.S Memorial High School
+                          </h1>
+                          <p>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            Gardanibagh, Patna, Bihar, In
+                          </p>
+                        </a>
+                      </div>
+                      <div class="flex justify-around items-center mt-4">
+                        <div class="text-center">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                          <p>CBSE/ICSE</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-building"></i>
+                          <p>Day School</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-user-graduate"></i>
+                          <p>Co-ed</p>
+                        </div>
+                      </div>
+                      <div class="border-b-2 mt-4 border-[#000000]"></div>
+                      <div class="flex justify-between items-center mt-2">
+                        <div className="text-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>257</span>
+                        </div>
+                        <div class="flex items-center gap-x-1">
+                          <div>
+                            <p class="text-[12px] text-right font-semibold">
+                              Very Good
+                            </p>
+                            <p class="text-[12px] text-right">2 Reviews</p>
+                          </div>
+                          <button
+                            class="px-2 py-1 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                          >
+                            4.0
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="W-full bg-[#FFFFFF] border-2 border-[#000000] mt-10 shadow-xl rounded-[4px]"
+                >
+                  <div class="">
+                    <div
+                      class="relative h-[200px] overflow-hidden rounded-t-[4px]"
+                    >
+                      <img
+                        src="https://www.educationtoday.co/assets/img/schoolcover/20240424090435coverphotoNewProject.jpg"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        className="absolute  right-2 top-4 mr-2 text-xl cursor-pointer z-10"
+                      >
+                        <i class="fa-solid fa-location-dot text-[#000000]"></i>
+                      </span>
+                    </div>
+                    <div
+                      class="px-4 pt-4 pb-2 dark:text-dark-subtle text-tertiary"
+                    >
+                      <div class="flex items-center gap-x-2">
+                        <div
+                          class="relative h-[40px] w-[40px] border-2 border-[#000000] rounded-full overflow-hidden"
+                        >
+                          <img
+                            src="https://www.educationtoday.co/assets/img/schoollogo/20240424090435logodownload.jpg"
+                            class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+                            alt=""
+                          />
+                        </div>
+                        <a href="">
+                          <h1 class="text-l font-bold hover:text-light-subtle">
+                            K.P.S Memorial High School
+                          </h1>
+                          <p>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            Gardanibagh, Patna, Bihar, In
+                          </p>
+                        </a>
+                      </div>
+                      <div class="flex justify-around items-center mt-4">
+                        <div class="text-center">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                          <p>CBSE/ICSE</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-building"></i>
+                          <p>Day School</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-user-graduate"></i>
+                          <p>Co-ed</p>
+                        </div>
+                      </div>
+                      <div class="border-b-2 mt-4 border-[#000000]"></div>
+                      <div class="flex justify-between items-center mt-2">
+                        <div className="text-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>257</span>
+                        </div>
+                        <div class="flex items-center gap-x-1">
+                          <div>
+                            <p class="text-[12px] text-right font-semibold">
+                              Very Good
+                            </p>
+                            <p class="text-[12px] text-right">2 Reviews</p>
+                          </div>
+                          <button
+                            class="px-2 py-1 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                          >
+                            4.0
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="W-full bg-[#FFFFFF] border-2 border-[#000000] mt-10 shadow-xl rounded-[4px]"
+                >
+                  <div class="">
+                    <div
+                      class="relative h-[200px] overflow-hidden rounded-t-[4px]"
+                    >
+                      <img
+                        src="https://www.educationtoday.co/assets/img/schoolcover/20240424090435coverphotoNewProject.jpg"
+                        class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                        alt=""
+                      />
+                      <span
+                        className="absolute  right-2 top-4 mr-2 text-xl cursor-pointer z-10"
+                      >
+                        <i class="fa-solid fa-location-dot text-[#000000]"></i>
+                      </span>
+                    </div>
+                    <div
+                      class="px-4 pt-4 pb-2 dark:text-dark-subtle text-tertiary"
+                    >
+                      <div class="flex items-center gap-x-2">
+                        <div
+                          class="relative h-[40px] w-[40px] border-2 border-[#000000] rounded-full overflow-hidden"
+                        >
+                          <img
+                            src="https://www.educationtoday.co/assets/img/schoollogo/20240424090435logodownload.jpg"
+                            class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+                            alt=""
+                          />
+                        </div>
+                        <a href="">
+                          <h1 class="text-l font-bold hover:text-light-subtle">
+                            K.P.S Memorial High School
+                          </h1>
+                          <p>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            Gardanibagh, Patna, Bihar, In
+                          </p>
+                        </a>
+                      </div>
+                      <div class="flex justify-around items-center mt-4">
+                        <div class="text-center">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                          <p>CBSE/ICSE</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-building"></i>
+                          <p>Day School</p>
+                        </div>
+                        <div class="text-center">
+                          <i class="fa-solid fa-user-graduate"></i>
+                          <p>Co-ed</p>
+                        </div>
+                      </div>
+                      <div class="border-b-2 mt-4 border-[#000000]"></div>
+                      <div class="flex justify-between items-center mt-2">
+                        <div className="text-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>257</span>
+                        </div>
+                        <div class="flex items-center gap-x-1">
+                          <div>
+                            <p class="text-[12px] text-right font-semibold">
+                              Very Good
+                            </p>
+                            <p class="text-[12px] text-right">2 Reviews</p>
+                          </div>
+                          <button
+                            class="px-2 py-1 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+                          >
+                            4.0
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-[#181818] text-[#FFFFFF]">
+        <div class="w-full flex flex-wrap justify-between px-[2rem] sm:px-[4rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem]">
+          <div>HII</div>
+          <div>HII</div>
+          <div>HII</div>
+          <div>HII</div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#181818] text-[#FFFFFF] mt-10">
+      <div
+        class="w-full flex flex-wrap justify-between px-[2rem] sm:px-[4rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-20 text-center"
+      >
+        <div class="w-full sm:w-full md:w-6/12 lg:w-3/12 xl:w-3/12 text-center">
+          <a href="#" class="flex justify-center items-center">
+            <img
+              src="https://educationtoday.co/assets/img/educationtoday.png"
+              width="300"
+              height="90.25"
+              alt="Educationtoday"
+            />
+          </a>
+          <p class="mt-4 text-dark-subtle">
+            Include popular icons in your React projects easily with
+            react-icons, which utilizes ES6 imports that allows you to include
+            only the icons that your project is using.
+          </p>
+          <!-- <SocialPlugin /> -->
+        </div>
+        <div
+          class="w-full sm:w-full md:w-6/12 lg:w-3/12 xl:w-3/12 text-center mt-5 sm:mt-5 md:mt-0 lg:mt-0 xl:mt-0"
+        >
+          <div class="mb-5">
+            <h1 class="text-2xl text-dark-subtle">Explore</h1>
+          </div>
+          <ul class="flex flex-col gap-y-3">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Our Projects</a>
+            </li>
+            <li>
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="Contact-us">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Create a account</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-full sm:w-full md:w-6/12 lg:w-3/12 xl:w-3/12 text-center mt-5 sm:mt-5 md:mt-5 lg:mt-0 xl:mt-0"
+        >
+          <div class="mb-5">
+            <h1 class="text-2xl text-dark-subtle">Explore</h1>
+          </div>
+          <ul class="flex flex-col gap-y-3">
+            <li>
+              <a href="#">Ui/Ux Design</a>
+            </li>
+            <li>
+              <a href="#">Web Development</a>
+            </li>
+            <li>
+              <a href="#">Typography</a>
+            </li>
+            <li>
+              <a href="#">Freelance Business</a>
+            </li>
+            <li>
+              <a href="#">Lifestyle</a>
+            </li>
+            <li>
+              <a href="#">Startups</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-full sm:w-full md:w-6/12 lg:w-3/12 xl:w-3/12 text-center mt-5 sm:mt-5 md:mt-5 lg:mt-0 xl:mt-0"
+        >
+          <div class="mb-5">
+            <h1 class="text-2xl text-dark-subtle">Contact</h1>
+          </div>
+          <div class="text-center text-dark-subtle">
+            <p>
+              3rd floor, no 461, Sai sobagu, Outer Ring Rd, Teacher's Colony,
+              Sector 5, HSR Layout, Bengaluru, Karnataka 560034
+            </p>
+
+            <a
+              class="text-xl flex justify-center items-center gap-x-2 text-center mt-5"
+              href=""
+            >
+              <i class="far fa-envelope"></i>
+              <p class="text-sm">rk8717989@gmail.com</p>
+            </a>
+
+            <a
+              class="text-l flex justify-center items-center gap-x-2 text-center mt-5"
+              href=""
+            >
+              <i class="fa-solid fa-phone"></i>
+              <p class="text-sm">+91 7368035305</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto border-[1px] border-dark-subtle w-10/12"></div>
+      <div class="text-center p-4 text-dark-subtle">
+        <h1 class="text-l">
+          &#169; Copyright 2024
+          <a
+            href="https://webkledges.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Educationtoday
+          </a>
+        </h1>
+      </div>
+    </footer>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>

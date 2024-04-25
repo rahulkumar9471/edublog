@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+* {
+
+    font-family: 'EB Garamond', serif;
+}
+
+.category .slick-slide, .schools-location .slick-slide {
+    margin: 0 10px; 
+}
+.slick-prev {
+    left: -4px;
+    z-index: 999; 
+}
+.slick-next {
+    right: -4px;
+    z-index: 999;
+}
+.slick-next:before, .slick-prev:before {
+    color: #000000;
+}
+
+ 
