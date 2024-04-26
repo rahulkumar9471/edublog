@@ -5,7 +5,7 @@
     font-family: 'EB Garamond', serif;
 }
 
-.category .slick-slide, .schools-location .slick-slide {
+.category .slick-slide, .schools-location .slick-slide, .testimonials .slick-slide {
     margin: 0 10px; 
 }
 .slick-prev {
