@@ -5,19 +5,39 @@
     font-family: 'EB Garamond', serif;
 }
 
-.category .slick-slide, .schools-location .slick-slide, .testimonials .slick-slide {
-    margin: 0 10px; 
+.category .slick-slide,
+.schools-location .slick-slide,
+.testimonials .slick-slide {
+    margin: 0 10px;
 }
+
 .slick-prev {
     left: -4px;
-    z-index: 999; 
+    z-index: 999;
 }
+
 .slick-next {
     right: -4px;
     z-index: 999;
 }
-.slick-next:before, .slick-prev:before {
+
+.slick-next:before,
+.slick-prev:before {
     color: #000000;
 }
 
- 
+/* width */
+.schooldetails::-webkit-scrollbar {
+    width: 1px !important;
+    height: 1px !important;
+}
+
+/* Handle */
+.schooldetails::-webkit-scrollbar-thumb {
+    background: #D6D6D6;
+}
+
+/* Handle on hover */
+.schooldetails::-webkit-scrollbar-thumb:hover {
+    background: #D6D6D6;
+}

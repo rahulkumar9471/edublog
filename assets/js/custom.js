@@ -121,3 +121,18 @@ $(document).ready(function () {
         ],
     });
 });
+
+ 
+document.addEventListener("DOMContentLoaded", function() {
+    var scrollableDiv = document.getElementById("scrollable");
+    
+    // Scroll left when left button is clicked
+    scrollableDiv.querySelector("::-webkit-scrollbar-button:start").addEventListener("click", function() {
+        scrollableDiv.scrollLeft -= 50; // Adjust scroll amount as needed
+    });
+    
+    // Scroll right when right button is clicked
+    scrollableDiv.querySelector("::-webkit-scrollbar-button:end").addEventListener("click", function() {
+        scrollableDiv.scrollLeft += 50; // Adjust scroll amount as needed
+    });
+}); 
