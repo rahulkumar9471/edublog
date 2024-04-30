@@ -7,7 +7,9 @@
 
 .category .slick-slide,
 .schools-location .slick-slide,
-.testimonials .slick-slide {
+.testimonials .slick-slide,
+.gallery .slick-slide,
+.similar-school .slick-slide {
     margin: 0 10px;
 }
 
