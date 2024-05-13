@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font-awesome 6.5.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwindcss css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Slick Carousel CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+  <body class="bg-[#F2F2F2]">
+    <!-- Header -->
+    <header class="bg-[#FFFFFF] w-full z-50 shadow-md border-b-[1px]">
+      <!-- Top bar -->
+      <div class="hidden sm:hidden md:hidden lg:hidden xl:block">
+        <div
+          class="bg-[#000000] text-[#FFFFFF] flex justify-between items-center px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-2"
+        >
+          <div class="flex justify-between items-center gap-x-4">
+            <div class="flex justify-between items-center gap-x-2">
+              <i class="fa-solid fa-phone"></i>
+              <p class="">+91 7368035305</p>
+            </div>
+            <div class="flex justify-between items-center gap-x-2">
+              <i class="far fa-envelope"></i>
+              <p class="">info@educationtoday.co</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center gap-x-4">
+            <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class=""><i class="fab fa-instagram"></i></a>
+            <a href="#" class=""><i class="fab fa-twitter"></i></a>
+            <a href="#" class=""><i class="fab fa-linkedin"></i></a>
+            <a href="#" class=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Top Bar Close -->
+      <nav
+        class="flex w-full justify-between px-[1rem] sm:px-[3rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-4 md:py-4 items-center"
+      >
+        <div>
+          <a href="/">
+            <img
+              src="https://educationtoday.co/assets/img/educationtoday.png"
+              width="161"
+              height="40.25"
+              alt="Educationtoday"
+            />
+          </a>
+        </div>
+        <div
+          class="relative lg:w-[20rem] xl:w-[30rem] hidden sm:hidden md:hidden lg:block xl:block"
+        >
+          <input
+            type="text"
+            class="w-full border-2 border-dark-subtle text-[#000000] border-[#000000] p-2 pl-[40px] bg-transparent rounded-[4px]"
+            placeholder="Search"
+          />
+          <span class="absolute left-3 top-[10px]"
+            ><i class="fas fa-search"></i
+          ></span>
+        </div>
+        <div>
+          <ul
+            class="flex gap-x-4 md:gap-x-4 lg:gap-x-6 xl:gap-x-8 font-semibold items-center"
+          >
+            <li class="block">
+              <button
+                class="py-[6px] px-3 rounded-[4px] border-2 border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-[#FFFFFF]"
+              >
+                <i class="fa-solid fa-bars text-l"></i>
+              </button>
+            </li>
+            <li class="hidden sm:hidden md:hidden lg:block">
+              <a
+                href="/auth/sign-up"
+                class="px-4 py-2 border-2 border-[#000000] text-[#FFFFFF] bg-[#000000] rounded focus:outline-none"
+              >
+                Login
+              </a>
+            </li>
+            <li class="block sm:block md:block lg:block xl:hidden">
+              <button
+                class="py-[6px] px-3 rounded-[4px] border-2 border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-[#FFFFFF]"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        class="hidden sm:hidden md:hidden lg:hidden xl:block bg-[#000000] text-[#FFFFFF]"
+      >
+        <ul
+          class="flex w-full justify-around items-center px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-4 font-semibold"
+        >
+          <li class="">
+            <a href="/" class="hover:border-b-2 border-[#D6D6D6] text-l">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/Ui-Ux-Design"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./school.html"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >School</a
+            >
+          </li>
+          <li>
+            <a
+              href="./school.html"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >Boarding Schools</a
+            >
+          </li>
+          <li>
+            <a
+              href="/Freelance-Business"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+            >
+              Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="/Freelance-Business"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+            >
+              Parents Corner
+            </a>
+          </li>
+          <li class="">
+            <a
+              href="/Lifestyle"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >Admissions
+            </a>
+          </li>
+          <li>
+            <a
+              href="/Startups"
+              class="b-4 hover:border-b-2 border-[#D6D6D6] text-l"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Header Close -->
+
+    <section>
+      <div class="">
+        <div class="flex justify-center mx-auto items-center h-[80vh]">
+          <div
+            class="shadow-xl border-t-4 border-[#000000] p-10 rounded-lg bg-[#FFFFFF]"
+          >
+            <div class="text-center">
+              <h1 class="text-2xl font-bold mb-5">Login</h1>
+            </div>
+            <form class="w-[20rem]">
+              <div class="flex flex-col-reverse">
+                <input
+                  name="username"
+                  class="w-full sm:w-full rounded-[4px] border-2 border-[#D6D6D6] p-[10px] px-[10px] mb-2 mt-1 bg-transparent peer"
+                />
+                <label
+                  htmlFor="username"
+                  class="mb-[6px] peer-focus:text-[#000000] text-[#181818]"
+                  >Username</label
+                >
+              </div>
+              <div class="flex flex-col-reverse relative">
+                <input
+                  name="password"
+                  class="w-full sm:w-full rounded-[4px] border-2 border-[#D6D6D6] p-[10px] px-[10px] mb-2 mt-1 bg-transparent peer"
+                />
+                <label
+                  htmlFor="username"
+                  class="mb-[6px] peer-focus:text-[#000000] text-[#181818]"
+                  >Password</label
+                >
+                <i
+                  class="fa-regular fa-eye absolute right-3 top-[48px] cursor-pointer"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center mt-2">
+                <div class="flex items-center gap-x-2">
+                  <input
+                    type="checkbox"
+                    class="h-4 w-6 accent-[#000000] rounded-[10px] bg-transparent"
+                    checked
+                    id="invalidCheck"
+                  />
+                  <label htmlFor="invalidCheck" class="text-[#000000]">
+                    Remember Me
+                  </label>
+                </div>
+                <a href="#">Forgot Password ?</a>
+              </div>
+              <div class="mt-4">
+                <button
+                  class="w-full flex justify-center items-center h-10 font-semibold border-2 border-[#000000] bg-[#000000] text-[#FFFFFF] hover:opacity-80 focus:outline-none rounded-[4px]"
+                  type="submit"
+                >
+                  Login
+                </button>
+              </div>
+              <div class="flex justify-center items-center mt-4">
+                <p class="dark:text-dark-subtle text-light-subtle">
+                  Don't have an account ?
+                </p>
+                <a href="#" class="ml-2">Register</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#181818] text-[#FFFFFF] mt-16 relative">
+      <!-- Newsletter -->
+      <div
+        class="px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] py-4 absolute top-[-80px] left-0 right-0"
+      >
+        <div
+          class="border-2 border-[#000000] bg-[#000000] shadow-lg rounded-[10px]"
+        >
+          <div class="flex flex-wrap justify-between items-center p-6">
+            <div class="flex justify-start items-center">
+              <i class="fa-regular fa-envelope text-[100px] text-[#D6D6D6]"></i>
+              <p class="text-2xl ml-3 font-medium">
+                Subscribe now to get <br />
+                latest updates
+              </p>
+            </div>
+            <div class="flex">
+              <input
+                type="text"
+                class="bg-transparent border-b-2 border-[#fff] text-[#fff] p-2 focus:outline-none"
+                placeholder="Email Address...."
+              />
+              <button class="text-3xl">
+                <i class="fa-solid fa-paper-plane text-[#D6D6D6]"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Newsletter Close -->
+      <div
+        class="w-full flex flex-wrap justify-between px-[2rem] sm:px-[4rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem] pt-36 pb-20 text-center"
+      >
+        <div class="w-full sm:w-full md:w-6/12 lg:w-3/12 xl:w-3/12 text-center">
+          <a href="#" class="flex justify-center items-center">
+            <img
+              src="https://educationtoday.co/assets/img/educationtoday.png"
+              width="300"
+              height="90.25"
+              alt="Educationtoday"
+            />
+          </a>
+          <p class="mt-4 text-dark-subtle">
+            Include popular icons in your React projects easily with
+            react-icons, which utilizes ES6 imports that allows you to include
+            only the icons that your project is using.
+          </p>
+          <div>
+            <div class="flex justify-around items-center mt-5">
+              <div>
+                <a href="">
+                  <button
+                    class="shadow-xl bg-[#000000] flex items-center justify-center p-2 w-10 h-10 rounded-full"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </button>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <button
+                    class="shadow-xl bg-[#000000] flex items-center justify-center p-2 w-10 h-10 rounded-full"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <button
+                    class="shadow-xl bg-[#000000] flex items-center justify-center p-2 w-10 h-10 rounded-full"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <button
+                    class="shadow-xl bg-[#000000] flex items-center justify-center p-2 w-10 h-10 rounded-full"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </button>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <button
+                    class="shadow-xl bg-[#000000] flex items-center justify-center p-2 w-10 h-10 rounded-full"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <p class="mt-8 text-center text-dark-subtle">
+              <a href="#">www.educationtoday.co</a>
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full sm:w-full md:w-6/12 lg:w-3/12 xl:w-3/12 text-center mt-5 sm:mt-5 md:mt-0 lg:mt-0 xl:mt-0"
+        >
+          <div class="mb-5">
+            <h1 class="text-2xl text-dark-subtle">Explore</h1>
+          </div>
+          <ul class="flex flex-col gap-y-3">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Our Projects</a>
+            </li>
+            <li>
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="Contact-us">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Create a account</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-full sm:w-full md:w-6/12 lg:w-3/12 xl:w-3/12 text-center mt-5 sm:mt-5 md:mt-5 lg:mt-0 xl:mt-0"
+        >
+          <div class="mb-5">
+            <h1 class="text-2xl text-dark-subtle">Explore</h1>
+          </div>
+          <ul class="flex flex-col gap-y-3">
+            <li>
+              <a href="#">Ui/Ux Design</a>
+            </li>
+            <li>
+              <a href="#">Web Development</a>
+            </li>
+            <li>
+              <a href="#">Typography</a>
+            </li>
+            <li>
+              <a href="#">Freelance Business</a>
+            </li>
+            <li>
+              <a href="#">Lifestyle</a>
+            </li>
+            <li>
+              <a href="#">Startups</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-full sm:w-full md:w-6/12 lg:w-3/12 xl:w-3/12 text-center mt-5 sm:mt-5 md:mt-5 lg:mt-0 xl:mt-0"
+        >
+          <div class="mb-5">
+            <h1 class="text-2xl text-dark-subtle">Contact</h1>
+          </div>
+          <div class="text-center text-dark-subtle">
+            <p>
+              3rd floor, no 461, Sai sobagu, Outer Ring Rd, Teacher's Colony,
+              Sector 5, HSR Layout, Bengaluru, Karnataka 560034
+            </p>
+
+            <a
+              class="text-xl flex justify-center items-center gap-x-2 text-center mt-5"
+              href=""
+            >
+              <i class="far fa-envelope"></i>
+              <p class="text-sm">rk8717989@gmail.com</p>
+            </a>
+
+            <a
+              class="text-l flex justify-center items-center gap-x-2 text-center mt-5"
+              href=""
+            >
+              <i class="fa-solid fa-phone"></i>
+              <p class="text-sm">+91 7368035305</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto border-[1px] border-dark-subtle w-10/12"></div>
+      <div
+        class="flex flex-wrap justify-between items-center p-4 w-full px-[2rem] sm:px-[4rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem]"
+      >
+        <h1 class="text-l">
+          &#169; Copyright 2024
+          <a
+            href="https://webkledges.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Educationtoday.
+          </a>
+        </h1>
+        <h1 class="text-l">
+          Made with <i class="fa-regular fa-heart"></i> by
+          <a
+            href="https://webkledges.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Rahul Kumar.
+          </a>
+        </h1>
+      </div>
+    </footer>
+    <!-- Footer Close -->
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
